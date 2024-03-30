@@ -3,9 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>??? 1000-7 ???</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
@@ -13,6 +14,28 @@
 <body id="body">
 
 
+	<div class="autop">
+
+		<iframe id="autop" src="mp3/psiblades.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+		</iframe>
+
+
+		<audio autoplay loop id="playAudio">
+			<source src="mp3/psiblades.mp3">
+		</audio>
+
+		<script>
+			var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+			if (!isChrome) {
+				$('#iframeAudio').remove()
+			}
+			else {
+				$('#playAudio').remove()
+			}
+
+		</script>
+
+	</div>
 
 
 	<div class="block"></div>
@@ -25,9 +48,11 @@
 	<div class="block">
 
 
-		<div class="blockp">
-			<p>ТУТ БЫЛ ПЛОХОЙ ТЕКСТ!!!<br>
-				<3 
+		<div class="blockp points">
+			<p class="points">
+				пися попа
+
+				 
 			</p>
 		</div>
 
@@ -38,10 +63,6 @@
 
 
 
-
-	<script src="js/three.min.js"></script>
-	<script src="js/vanta.clouds.min.js"></script>
-	<script src="js/clouds.js"></script>
 
 
 
@@ -67,6 +88,13 @@
 		</script>
 
 	</div>
+
+
+
+	<script src="js/three.min.js"></script>
+	<script src="js/vanta.clouds.min.js"></script>
+	<script src="js/clouds.js"></script>
+
 
 
 </body>

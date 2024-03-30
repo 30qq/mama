@@ -20,31 +20,54 @@ body {
 .blockp {
 	display: flex;
 	justify-content: center;
-	text-align: center;
+
 	flex-direction: column;
 	align-items: center;
-	transform: translate(0, +200%);
+	/* transform: translate(0, +200%); */
 }
 
 
 .blockp p{
-  font-family: "Comfortaa", sans-serif;
-	font-size: 32px;
-	font-weight: 700;
-	color: pink;
-	-webkit-text-stroke: 1px #000000;
+	height: 700px;
+	width: 500px;
+	margin: 0px;
 }
 
 
 
 
+.points {
+	font-family: "Comfortaa", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	color: pink;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical; 
+	-webkit-text-stroke: 1px #000000;
+	text-align: center;
+
+	/* youtube */
+	max-height: 700px;
+	-webkit-line-clamp: 20;
+	/* display: box;
+	display: -webkit-box; */
+	display: grid;
+  place-items: center;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: normal;
+	
 
 
+	margin: 3px;
 
 
-
-
-
+	/* defies */
+	hyphens: auto;
+ }
 
 
 
@@ -53,7 +76,7 @@ body {
 	.block {
 		position: absolute;
 		height: 500px;
-		width: 300px;
+		width: 400px;
 		background: rgb(255, 255, 255, 0.5);
 		position: absolute;
 		top:50%;
@@ -70,17 +93,39 @@ body {
 		text-align: center;
 		flex-direction: column;
 		align-items: center;
-		transform: translate(0, +40%);
+		/* transform: translate(0, +40%); */
 	}
 	
+
 	.blockp p{
-		font-family: "Comfortaa", sans-serif;
-		font-size: 22px;
-		font-weight: 700;
-		color: pink;
-		-webkit-text-stroke: 1px #000000;
+		height: 500px;
+		width: 400px;
+		margin: 0px;
 	}
 	
+	
+.points {
+	font-family: "Comfortaa", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: pink;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical; 
+	-webkit-text-stroke: 1px #000000;
+
+	/* youtube */
+	max-height: 488px;
+	-webkit-line-clamp: 18;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: normal;
+ }
+
 	
 }
 
@@ -106,18 +151,40 @@ body {
 		text-align: center;
 		flex-direction: column;
 		align-items: center;
-		transform: translate(0, +40%);
+		/* transform: translate(0, +40%); */
 	}
 	
+
 	.blockp p{
+		height: 500px;
+		width: 300px;
+		margin: 0px;
+	}
+	
+	
+	
+	.points {
 		font-family: "Comfortaa", sans-serif;
-		font-size: 22px;
+		font-size: 20px;
 		font-weight: 700;
 		color: pink;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical; 
 		-webkit-text-stroke: 1px #000000;
-	}
-	
-	
+	margin: 5px;
+		/* youtube */
+		max-height: 480px;
+		-webkit-line-clamp: 21;
+		display: box;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		text-overflow: ellipsis;
+		white-space: normal;
+	 }
+
 }
 
 
@@ -144,19 +211,42 @@ body {
 		text-align: center;
 		flex-direction: column;
 		align-items: center;
-		transform: translate(0, +40%);
+		/* transform: translate(0, +40%); */
 	}
 	
+
 	.blockp p{
+		height: 500px;
+		width: 200px;
+		margin: 0px;
+	}
+	
+	
+	.points {
 		font-family: "Comfortaa", sans-serif;
-		font-size: 22px;
+		font-size: 18px;
 		font-weight: 700;
 		color: pink;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical; 
 		-webkit-text-stroke: 1px #000000;
-	}
-	
-	
+		/* youtube */
+		max-height: 480px;
+		-webkit-line-clamp: 24;
+		display: box;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		text-overflow: ellipsis;
+		white-space: normal;
+	 }
+
 }
+
+	
+
 
 
 
@@ -164,6 +254,5 @@ body {
 .comfortaa {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
